@@ -2,6 +2,9 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import App from './App';
+import ghGot from 'gh-got';
+
+Vue.prototype.$http = ghGot;
 
 /* eslint-disable no-new */
 new Vue({
