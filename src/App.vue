@@ -2,6 +2,11 @@
   <div id="app">
     <img src="./assets/logo.png">
     <hello></hello>
+    <div class="row">
+      <div class="small-2 large-4 columns"><!-- ... --></div>
+      <div class="small-4 large-4 columns"><!-- ... --></div>
+      <div class="small-6 large-4 columns"><!-- ... --></div>
+    </div>
   </div>
 </template>
 
@@ -16,7 +21,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import '~foundation-sites/scss/foundation';
+@include foundation-everything;
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

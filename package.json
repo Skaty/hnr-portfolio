@@ -11,6 +11,7 @@
     "lint:fix": "eslint --ext .js,.vue src --fix"
   },
   "dependencies": {
+    "foundation-sites": "^6.3.0",
     "gh-got": "^5.0.0",
     "vue": "^2.1.0",
     "vue-router": "^2.1.3",
