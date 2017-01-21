@@ -3,6 +3,9 @@
 import Vue from 'vue';
 import App from './App';
 import ghGot from 'gh-got';
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
 
 Vue.prototype.$http = ghGot;
 
