@@ -3,15 +3,14 @@
 import Vue from 'vue';
 import App from './App';
 import ghGot from 'gh-got';
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
+import store from './vuex/store';
 
 Vue.prototype.$http = ghGot;
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   template: '<App/>',
   components: { App },
 });
