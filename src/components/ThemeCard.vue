@@ -26,7 +26,7 @@ export default {
     // eslint-disable-next-line
     getPortfolio: function() {
       if (this.githubId) {
-        return `pages/${this.githubId}/${this.themeId}`;
+        return `page/${this.githubId}/${this.themeId}`;
       }
       return '/';
     },
