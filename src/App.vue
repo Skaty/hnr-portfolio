@@ -22,7 +22,7 @@
     </section>
     <transition name="fade">
     <main v-show="isGithubId">
-      <h3 class="instruction">Pick a theme</h3>
+      <h3 class="instruction instruction--higher">Pick a theme</h3>
       <ul class="row small-up-1 medium-up-3 large-up-4 theme-list">
         <li class="column column-block" v-for="(pic, name, index) in themes">
           <p-theme-card :github-id="githubId" :theme-name="name" :theme-pic="pic" :theme-id="index"></p-theme-card>
@@ -77,7 +77,8 @@ $transition-timing: 0.4s;
 }
 
 .hero {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-size:cover;
   background-image: url("./img/stock-2.jpg");
 }
@@ -101,6 +102,10 @@ $transition-timing: 0.4s;
 
 .instruction--lower {
   margin-bottom: -0.7rem;
+}
+
+.instruction--higher {
+  margin-bottom: 0.7rem;
 }
 
 .fade-enter-active, .fade-leave-active {
